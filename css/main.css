@@ -1,0 +1,142 @@
+html{ background-color: white; }
+body{ background-color: white; font-family: roboto, sans-serif ; max-width: 1200px; box-shadow:0px 2px 7px rgba(0,0,0,0.5); }
+header{	background-color: #2a5934; text-align: center; color:white; }
+article{ }
+footer{ background-color: grey; text-align: center; margin-top:25px; }
+
+ul {
+    margin:0 ;
+    padding: 0;
+    list-style: none;
+}
+.marcas img {
+    width: 3rem;
+}
+.marcas {
+    padding: 1rem;
+    margin:1rem;
+    box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+}
+.btn-large {
+    padding: 0.75rem;
+    background-color: #003666;
+    color: white ;
+    width: 100%;
+    margin-top:1rem;
+}
+.rojo{
+    background-color: red ;
+    border-radius: 25px;
+    border:solid black 1px;
+    padding: 1rem;
+}
+.negro{
+    background-color: black ;
+    border-radius: 25px;
+    border:solid black 1px;
+    padding: 1rem;
+}
+.blanco{
+    background-color: white ;
+    border-radius: 25px;
+    border:solid black 1px;
+    padding: 1rem;
+}
+.informacion > ul {
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    border-left: solid #003666 1px ;
+}
+.informacion {
+    padding: 0.5rem;
+}
+.tarjeta {
+    padding: 0.8rem;
+    min-width: 300px;
+}
+h2 {
+    text-align:center;
+}
+.tarjeta img {
+    width:100%;
+}
+#ma1 { background-image: url("../img/spriteLogos.png"); background-position: 0 0; width: 70px; height: 70px; transition: background-position .3s linear; }
+#ma1:hover { background-position-y:70px ;}
+#ma2 { background-image: url("../img/spriteLogos.png"); background-position: -70px 0; width: 140px; height: 70px; transition: background-position .3s linear; }
+#ma2:hover { background-position-y:70px ;}
+#ma3 { background-image: url("../img/spriteLogos.png"); background-position: -215px 0; width: 70px; height: 70px; transition: background-position .3s linear; }
+#ma3:hover { background-position-y:70px ;}
+#ma4 { background-image: url("../img/spriteLogos.png"); background-position: -285px 0; width: 70px; height: 70px; transition: background-position .3s linear; }
+#ma4:hover { background-position-y:70px ;}
+#ma5 { background-image: url("../img/spriteLogos.png"); background-position: -355px 0; width: 70px; height: 70px; transition: background-position .3s linear; }
+#ma5:hover { background-position-y:70px ;}
+#ma6 { background-image: url("../img/spriteLogos.png"); background-position: -425px 0; width: 70px; height: 70px; transition: background-position .3s linear; }
+#ma6:hover { background-position-y:70px ;}
+
+@keyframes animacion {
+    0% {background-position-y: 0 ;}
+    100% {background-position-y: 70px ;}
+}
+
+/* Flexibles */
+
+body {
+    display:flex;
+    align-self:center ;
+    flex-flow: column wrap;
+    margin: 0 auto;
+}
+
+.colores {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap ;
+}
+
+.marcas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around ;
+    align-items: flex-start;
+}
+
+.flex {
+    display: flex ;
+    flex-flow: row wrap ;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.tarjeta {
+    flex:1 1 31% ;
+    display: flex;
+    flex-flow: row wrap;
+}
+.tarjeta > form {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:center ;
+}
+
+.tarjeta > form > :nth-child(1) {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:33% ;
+}
+.tarjeta > form > :nth-child(2) {
+    flex-grow: 1;
+    flex-shrink:1 ;
+    flex-basis:55% ;
+}
+.tarjeta > form > :nth-child(3) {
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-basis:10% ;
+    float: right;
+    align-self:stretch ;
+    margin-top: 3rem;
+    background-color:#8ec06c ;
+}
+
+/* Flexibles */
